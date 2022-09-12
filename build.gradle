@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = '16'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  annotationProcessor 'org.immutables:value:2.9.0'
+  compileOnly 'org.immutables:value:2.9.0'
+  annotationProcessor 'org.immutables:annotate:2.9.0'
+  compileOnly 'org.immutables:annotate:2.9.0'
+  annotationProcessor 'net.karneim:pojobuilder:4.3.0'
+  compileOnly 'net.karneim:pojobuilder:4.3.0'
+}
